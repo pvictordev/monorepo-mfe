@@ -1,31 +1,28 @@
 {
   "name": "web",
-  "version": "0.0.0",
+  "version": "0.1.0",
+  "type": "module",
   "private": true,
   "scripts": {
-    "dev": "vite --port 3000",
-    "build": "run-p check-types \"build-only {@}\" --",
-    "preview": "vite preview",
-    "build-only": "vite build",
-    "check-types": "vue-tsc --noEmit -p tsconfig.app.json --composite false",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
+    "dev": "next dev --port 3000",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint --max-warnings 0",
+    "check-types": "next typegen && tsc --noEmit"
   },
   "dependencies": {
-    "ui": "workspace:*",
-    "vue": "^3.4.21"
+    "@repo/ui": "workspace:*",
+    "next": "16.2.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
   },
   "devDependencies": {
-    "@rushstack/eslint-patch": "^1.7.2",
-    "@tsconfig/node18": "^18.2.2",
-    "@types/node": "^20.11.24",
-    "@vitejs/plugin-vue": "^5.0.4",
-    "eslint": "^8.57.0",
-    "eslint-config-custom": "workspace:*",
-    "eslint-plugin-vue": "^9.22.0",
-    "npm-run-all2": "^6.1.2",
-    "tsconfig": "workspace:*",
-    "typescript": "5.5.4",
-    "vite": "^5.1.4",
-    "vue-tsc": "^2.0.4"
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@types/node": "^22.15.3",
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
+    "eslint": "^9.39.1",
+    "typescript": "5.9.2"
   }
 }
