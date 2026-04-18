@@ -17,11 +17,12 @@
     "svelte-spa-router": "^4.0.1"
   },
   "devDependencies": {
+    "@module-federation/vite": "^1.8.0",
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
+    "@sveltejs/vite-plugin-svelte": "^5.0.3",
     "@types/node": "^22.15.3",
     "eslint": "^9.39.1",
-    "@sveltejs/vite-plugin-svelte": "^5.0.3",
     "svelte-check": "^4.0.0",
     "typescript": "5.9.2",
     "vite": "^7.1.5",

@@ -30,5 +30,15 @@ const { data: status, error } = await useAsyncData("platform-status", () => api.
         <p><strong>Routes:</strong> {{ status.routes.join(", ") }}</p>
       </template>
     </div>
+
+    <div class="panel stack">
+      <h3>Svelte remote</h3>
+      <p class="muted">
+        This button is mounted from the Svelte app through a federated <code>remoteEntry.js</code>.
+      </p>
+      <ClientOnly>
+        <SvelteRemoteCounter />
+      </ClientOnly>
+    </div>
   </section>
 </template>
