@@ -22,7 +22,9 @@ coverage
 .vercel
 
 # Build Outputs
-.next/
+.nuxt/
+.output/
+.svelte-kit/
 out/
 build
 dist
