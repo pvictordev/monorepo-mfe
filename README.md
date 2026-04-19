@@ -35,8 +35,8 @@ pnpm dev
 
 Then open:
 
-- Nuxt host: `http://localhost:3010`
-- Svelte visualizer standalone: `http://localhost:3012`
+- Nuxt host: `http://localhost:3000`
+- Svelte visualizer standalone: `http://localhost:5173`
 
 Useful checks:
 

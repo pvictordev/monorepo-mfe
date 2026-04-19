@@ -1,5 +1,6 @@
 const visualizerRemoteEntry =
-  process.env.NUXT_PUBLIC_VISUALIZER_REMOTE_ENTRY ?? "http://localhost:3012/remoteEntry.js";
+  process.env.NUXT_PUBLIC_VISUALIZER_REMOTE_ENTRY ??
+  "http://localhost:5173/remoteEntry.js";
 
 export default defineNuxtConfig({
   ssr: true,
@@ -24,7 +25,7 @@ export default defineNuxtConfig({
   },
   vite: {
     server: {
-      origin: "http://localhost:3010",
+      origin: "http://localhost:3000",
     },
     build: {
       target: "chrome89",

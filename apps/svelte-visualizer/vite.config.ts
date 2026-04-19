@@ -24,17 +24,17 @@ export default defineConfig(({ mode }) => {
     },
     server: {
       cors: true,
-      origin: "http://localhost:3012",
+      origin: "http://localhost:5173",
       proxy: {
         "/api": {
-          target: env.VITE_API_PROXY_TARGET || "http://localhost:3010",
+          target: env.VITE_API_PROXY_TARGET || "http://localhost:3000",
           changeOrigin: false,
           secure: false,
         },
       },
     },
     preview: {
-      port: 3012,
+      port: 5173,
     },
     build: {
       target: "chrome89",
