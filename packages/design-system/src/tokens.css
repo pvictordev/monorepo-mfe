@@ -1,0 +1,88 @@
+:root {
+  --mfe-font-sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --mfe-color-bg: #f6f8fb;
+  --mfe-color-bg-strong: #e8edf3;
+  --mfe-color-surface: #ffffff;
+  --mfe-color-surface-muted: #f0f4f8;
+  --mfe-color-text: #18212f;
+  --mfe-color-muted: #647184;
+  --mfe-color-border: #ccd5e1;
+  --mfe-color-primary: #2457d6;
+  --mfe-color-primary-strong: #173b91;
+  --mfe-color-info: #246b9f;
+  --mfe-color-success: #16745f;
+  --mfe-color-warning: #9a6200;
+  --mfe-color-danger: #b4233c;
+  --mfe-color-danger-soft: #fff1f3;
+  --mfe-color-warning-soft: #fff7e5;
+  --mfe-color-info-soft: #eaf6ff;
+  --mfe-color-success-soft: #eaf8f2;
+  --mfe-space-1: 4px;
+  --mfe-space-2: 8px;
+  --mfe-space-3: 12px;
+  --mfe-space-4: 16px;
+  --mfe-space-5: 20px;
+  --mfe-space-6: 24px;
+  --mfe-space-8: 32px;
+  --mfe-radius-sm: 6px;
+  --mfe-radius-md: 8px;
+  --mfe-shadow-sm: 0 1px 2px rgba(24, 33, 47, 0.08);
+}
+
+.mfe-surface {
+  background: var(--mfe-color-surface);
+  border: 1px solid var(--mfe-color-border);
+  border-radius: var(--mfe-radius-md);
+  box-shadow: var(--mfe-shadow-sm);
+}
+
+.mfe-stack {
+  display: grid;
+  gap: var(--mfe-space-4);
+}
+
+.mfe-button {
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: var(--mfe-radius-sm);
+  cursor: pointer;
+  display: inline-flex;
+  font: inherit;
+  font-weight: 700;
+  justify-content: center;
+  min-height: 38px;
+  padding: 8px 12px;
+}
+
+.mfe-button--primary {
+  background: var(--mfe-color-primary);
+  color: #ffffff;
+}
+
+.mfe-button--secondary {
+  background: var(--mfe-color-surface);
+  border-color: var(--mfe-color-border);
+  color: var(--mfe-color-text);
+}
+
+.mfe-button--danger {
+  background: var(--mfe-color-danger-soft);
+  border-color: #f4b8c2;
+  color: var(--mfe-color-danger);
+}
+
+.mfe-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.56;
+}
+
+.mfe-pill {
+  align-items: center;
+  border: 1px solid var(--mfe-color-border);
+  border-radius: 999px;
+  display: inline-flex;
+  font-size: 12px;
+  font-weight: 700;
+  min-height: 26px;
+  padding: 3px 9px;
+}

@@ -25,6 +25,7 @@ coverage
 .nuxt/
 .output/
 .svelte-kit/
+.__mf__temp/
 out/
 build
 dist

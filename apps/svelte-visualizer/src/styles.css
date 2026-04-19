@@ -1,0 +1,43 @@
+html {
+  background: var(--mfe-color-bg);
+  color: var(--mfe-color-text);
+  font-family: var(--mfe-font-sans);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+button {
+  font: inherit;
+}
+
+.standalone {
+  display: grid;
+  gap: var(--mfe-space-5);
+  margin: 0 auto;
+  max-width: 760px;
+  padding: var(--mfe-space-6);
+}
+
+.standalone__header {
+  display: grid;
+  gap: var(--mfe-space-2);
+}
+
+.standalone__header h1,
+.standalone__header p {
+  margin: 0;
+}
+
+.standalone__eyebrow {
+  color: var(--mfe-color-info);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}

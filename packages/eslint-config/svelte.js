@@ -21,6 +21,9 @@ export const svelteConfig = [
       globals: {
         ...globals.browser,
       },
+      parserOptions: {
+        parser: tseslint.parser,
+      },
     },
   },
   {
